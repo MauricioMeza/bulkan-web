@@ -1,0 +1,81 @@
+/* ---------------Header and NavBar---------------------------*/
+#logo-img{
+	width: 20vh;
+	height: auto;
+}
+.header{
+	background-image: url("Assets/BackgorundBW.jpg"); 
+	background-size: cover;
+	background-position: 0% 50%;
+	padding: 0px !important;
+}
+.header .navbar {
+  	background-color: rgba(0,0,0,.5) !important;
+}
+.navbar{
+	border-bottom-style: solid;
+  	padding: 0% 10% 0% 10%;	
+}
+#background-intro{
+	text-align: center;
+	padding: 10% 0% 10% 0%;
+}
+#whats-but{
+	text-decoration: none;
+	background-color: #61CE70;
+	font-size: 3vh;
+	color: white;
+	border-radius: 3px;
+	padding: 12px 25px 12px 25px;
+}
+#whats-ico{
+	background-image: url("Assets/whatsapp--v2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 0vh 2vh 0vh 2vh;
+}
+.white-title{
+	color: white;
+	font-size: 7vh;
+	margin-bottom: 3vh;
+}
+.grey-sub{
+	color: rgb(200,200,200);
+	font-size: 3vh;
+	margin-bottom: 5vh;
+}
+.nav-item{
+	font-size: 2.8vh;
+	margin: 0vh 1vh 0vh 1vh;
+}
+.navbar-toggler .navbar-toggler-icon{
+	height: 3vh;
+	width: 3vh;
+}
+
+/* ---------------Services Cards---------------------------*/
+#service-row{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.service-card{
+	height: 85%;
+	text-align: center;
+	padding: 3vh; 
+	margin: 3vh;
+}
+.service-sub{
+	color: rgb(100,100,100);
+	font-size: 2.5vh;
+}
+.service-title{
+	font-size: 4vh;
+	font-weight: bold;
+}
+.service-img{
+	width: 25%;
+	height: auto;
+}
+body{
+	margin: 0px;
+}
