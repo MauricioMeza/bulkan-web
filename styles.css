@@ -2,18 +2,24 @@ body{
 	margin: 0px;
 }
 /* ---------------Header and NavBar---------------------------*/
-#logo-img{
+.logo-img{
 	width: 20vh;
 	height: auto;
+}
+.logo-img-scroll{
+	width: 10vh;
+	height: auto;	
 }
 .header{
 	background-image: url("Assets/BackgorundBW.jpg"); 
 	background-size: cover;
 	background-position: 0% 50%;
-	padding: 0px !important;
 }
-.header .navbar {
-  	background-color: rgba(0,0,0,.5) !important;
+.header-scroll{
+	padding-top: 20vh;	
+}
+.header .navbar{
+  	background-color: rgba(0,0,0,.95) !important;
 }
 .navbar{
 	border-bottom-style: solid;
@@ -21,7 +27,7 @@ body{
 }
 #background-intro{
 	text-align: center;
-	padding: 10% 0% 10% 0%;
+	padding: 10% 5% 10% 5%;
 }
 #whats-but{
 	text-decoration: none;
@@ -82,7 +88,7 @@ body{
 
 /* ---------------Conatiner Carrousels---------------------------*/
 .container-carrousel{
-	margin-bottom: 10vh;
+	padding-top: 12vh;
 	text-align: center;
 }
 .container-title{
