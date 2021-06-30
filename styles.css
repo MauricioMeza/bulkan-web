@@ -30,13 +30,17 @@ body{
 	text-align: center;
 	padding: 10% 5% 10% 5%;
 }
-#whats-but{
+.whats-btn{
 	text-decoration: none;
 	background-color: #61CE70;
 	font-size: 3vh;
 	color: white;
 	border-radius: 3px;
 	padding: 12px 25px 12px 25px;
+}
+.whats-btn:hover{	
+	background-color: #4d9156;
+	color: white;
 }
 #whats-ico{
 	background-image: url("Assets/whatsapp--v2.png");
@@ -145,4 +149,17 @@ body{
 .contact-paragraph{
 	font-size: 2.7vh;
 	color: white;
+	padding-left: 2%;
+}
+.info-btn{
+	text-align: center;
+	background-color: #505050;
+	color: #ffffff;
+	padding: 6px 10px;
+	font-size: 3vh;
+}
+.info-btn:hover{
+	background-color:  #ffffff;
+	color: #000000;
+	
 }
