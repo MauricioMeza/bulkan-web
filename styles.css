@@ -161,5 +161,22 @@ body{
 .info-btn:hover{
 	background-color:  #ffffff;
 	color: #000000;
-	
+}
+.contact-form{
+	background-color: #dddddd;
+	width: 100%;
+}
+.contact-btn{
+	background-color: #000000;
+	color: #686868;
+	width: 100%;
+	border-radius: 10px;
+	border-color: #686868;
+	border-width: 2px;
+	border-style: solid;
+}
+.contact-btn:hover{
+	background-color:#999999;
+	color: #000000;
+	border-color: #ffffff;
 }
