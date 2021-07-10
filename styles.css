@@ -9,6 +9,7 @@ body{
 .logo-img-scroll{
 	width: 10vh;
 	height: auto;	
+	content:url("Assets/BulkanBSmall.png");
 }
 .header{
 	background-image: url("Assets/BackgorundBW.jpg"); 
