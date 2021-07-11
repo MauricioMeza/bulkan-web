@@ -16,7 +16,7 @@ function createCard(prod, index){
 			<div class="card-body">
 				<h4 class="card-title">${prod.nombre}</h4>
 				<h5 class="card-subtitle">${prod.presentacion}</h5>
-				<p class="card-text">${prod.precio}</p>
+				<p class="card-text">$${prod.precio}</p>
 			</div>
 		</div>
 		`
