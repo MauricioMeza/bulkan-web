@@ -1,5 +1,4 @@
-{
-	"productos": [
+var products = [
 		{
 			"nombre": "Aguardiente Nariño",
 			"presentacion": "Botella - 750ml",
@@ -9,17 +8,17 @@
 			"popular": true,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Aguardiente Antioqueño",
 			"presentacion": "Botella - 750ml",
 			"precio": 35000,
-			"imagen": "antioqueño-tella.jpg",
+			"imagen": "antioqueno-tella.jpg",
 			"tipo": "l",
 			"popular": true,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Ron Viejo de Caldas",
 			"presentacion": "Media Botella - 375ml",
@@ -29,17 +28,17 @@
 			"popular": true,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Whiskey Old Parr",
 			"presentacion": "Botella - 1000ml",
 			"precio": 120000,
-			"imagen": "olparr-tella.jpg",
+			"imagen": "oldpar-tella.jpg",
 			"tipo": "l",
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Cerveza Poker",
 			"presentacion": "Six Pack - 355ml x 6",
@@ -49,17 +48,17 @@
 			"popular": true,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Cerveza Corona",
 			"presentacion": "Six Pack - 355ml x 6",
 			"precio": 26000,
 			"imagen": "corona-6pack.jpg",
-			"tipo": "l",
+			"tipo": "c",
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Cerveza Becks",
 			"presentacion": "Six Pack - 355ml x 6",
@@ -69,7 +68,7 @@
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Coctel Smirknoff",
 			"presentacion": "4 Pack - 400ml x 4",
@@ -79,7 +78,7 @@
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Coctel FourLoko",
 			"presentacion": "Lata - 400ml",
@@ -89,16 +88,15 @@
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		}
+		},
 		{
 			"nombre": "Cigarrillos Marlboro",
 			"presentacion": "Cajetilla - 10und",
 			"precio": 10000,
-			"imagen": "fourloko.jpg",
-			"tipo": "c",
+			"imagen": "marlboro.jpg",
+			"tipo": "o",
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 		}
-	]
-}
+	];

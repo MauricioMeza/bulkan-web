@@ -1,3 +1,45 @@
+const popRow = document.getElementById("pop-row");
+const licRow = document.getElementById("lic-row");
+const crcRow = document.getElementById("crc-row");
+const otrRow = document.getElementById("otr-row");
+
+products.forEach(createCard)
+
+function createCard(prod, index){
+	if(prod.disponible){
+		//Create HTML Card
+		var htmlCard =  document.createElement('div');
+		htmlCard.setAttribute('class', 'col-lg-3 mx-auto my-3');
+		htmlCard.innerHTML =
+		`<div class="card carrousel-card shadow">
+			<img class="card-img-top img-select" src="Assets/${prod.imagen}" alt="Card image">
+			<div class="card-body">
+				<h4 class="card-title">${prod.nombre}</h4>
+				<h5 class="card-subtitle">${prod.presentacion}</h5>
+				<p class="card-text">${prod.precio}</p>
+			</div>
+		</div>
+		`
+
+		//Set it to one or more row containers
+		switch(prod.tipo){
+			case "l":
+				licRow.appendChild(htmlCard);
+			break;
+			case "c":
+				crcRow.appendChild(htmlCard);
+			break;
+			case "o":
+				otrRow.appendChild(htmlCard);
+			break;
+		}
+
+		if(prod.popular){
+			popRow.appendChild(htmlCard);	
+		}
+	}
+}
+
 /*
 <div class="col-lg-3 mx-auto my-3">
 	<div class="card carrousel-card shadow">
