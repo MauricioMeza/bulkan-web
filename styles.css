@@ -37,14 +37,14 @@ body{
 	text-decoration: none;
 	background-color: #61CE70;
 	font-size: 3vh;
-	color: white;
+	color: #eeeeee;
 	border-radius: 3px;
 	padding: 12px 25px 12px 25px;
 	transition: all 0.3s;
 }
 .whats-btn:hover{	
 	background-color: #4d9156;
-	color: white;
+	color: #ffffff;
 }
 #whats-ico{
 	background-image: url("Assets/whatsapp--v2.png");
@@ -129,12 +129,13 @@ body{
     height: auto;
     transition: all 0.3s;
     overflow: hidden;
+    transform: scale(.975);
 }
 
 .img-select:hover{
 	opacity: 1;
 	filter: grayscale(0%);
-	transform: scale(1.05);
+	transform: scale(1.025);
 	
 }
 
@@ -188,8 +189,9 @@ body{
 	width: 100%;
 }
 .contact-btn{
-	background-color: #000000;
-	color: #686868;
+	font-style: bold;
+	background-color:#686868;
+	color: #ffffff;
 	width: 100%;
 	border-radius: 10px;
 	border-color: #686868;
@@ -199,6 +201,6 @@ body{
 }
 .contact-btn:hover{
 	font-style: bold;
-	background-color:#686868;
-	color: #ffffff;
+	background-color:  #ffffff;
+	color: #000000;7
 }
