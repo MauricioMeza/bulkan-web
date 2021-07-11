@@ -24,18 +24,18 @@ function createCard(prod, index){
 		//Set it to one or more row containers
 		switch(prod.tipo){
 			case "l":
-				licRow.appendChild(htmlCard);
+				licRow.appendChild(htmlCard.cloneNode(true));
 			break;
 			case "c":
-				crcRow.appendChild(htmlCard);
+				crcRow.appendChild(htmlCard.cloneNode(true));
 			break;
 			case "o":
-				otrRow.appendChild(htmlCard);
+				otrRow.appendChild(htmlCard.cloneNode(true));
 			break;
 		}
 
 		if(prod.popular){
-			popRow.appendChild(htmlCard);	
+			popRow.appendChild(htmlCard.cloneNode(true));	
 		}
 	}
 }
