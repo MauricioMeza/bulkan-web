@@ -70,6 +70,16 @@ var products = [
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 		},
 		{
+			"nombre": "Cerveza Budweiser",
+			"presentacion": "Lata - 355ml",
+			"precio": 4000,
+			"imagen": "bud-lata.jpg",
+			"tipo": "c",
+			"popular": false,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
 			"nombre": "Coctel Smirknoff",
 			"presentacion": "4 Pack - 400ml x 4",
 			"precio": 30000,

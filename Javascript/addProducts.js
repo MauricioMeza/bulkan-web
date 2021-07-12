@@ -8,18 +8,21 @@ products.forEach(createCard)
 function createCard(prod, index){
 	if(prod.disponible){
 		//Create HTML Card
+		precio = (prod.precio/1000).toFixed(3);
 		var htmlCard =  document.createElement('div');
 		htmlCard.setAttribute('class', 'col-lg-3 mx-auto my-3');
 		htmlCard.innerHTML =
 		`<div class="card carrousel-card shadow">
-			<img class="card-img-top img-select" src="Assets/${prod.imagen}" alt="Card image">
+			<a data-bs-toggle="modal" data-bs-target="#prod-modal">
+				<img class="card-img-top img-select" src="Assets/${prod.imagen}" alt="Card image">
+			</a>
 			<div class="card-body">
 				<h4 class="card-title">${prod.nombre}</h4>
 				<h5 class="card-subtitle">${prod.presentacion}</h5>
-				<p class="card-text">$${prod.precio}</p>
+				<p class="card-text">$${precio}</p>
+				<a class="card-btn btn btn-secondary" data-bs-toggle="modal" data-bs-target="#prod-modal" data-bs-index="${index}"> Informacion del Producto </a>
 			</div>
-		</div>
-		`
+		</div>`
 
 		//Set it to one or more row containers
 		switch(prod.tipo){

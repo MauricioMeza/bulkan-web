@@ -101,7 +101,7 @@ body{
 	height: auto;
 }
 
-/* ---------------Container Carrousels---------------------------*/
+/* ---------------Container Products Carrousels---------------------------*/
 .container-carrousel{
 	padding-top: 15vh;
 	text-align: center;
@@ -121,6 +121,10 @@ body{
 	font-size: 2.5vh;
 	color: rgb(100,100,100);
 }
+.card-btn{
+	font-size: 2vh !important;
+	border-radius: 20px !important;
+}
 .img-select{
 	opacity: 0.9;
 	filter: grayscale(20%);
@@ -131,12 +135,36 @@ body{
     overflow: hidden;
     transform: scale(.975);
 }
-
 .img-select:hover{
 	opacity: 1;
 	filter: grayscale(0%);
 	transform: scale(1.025);
-	
+}
+
+/* ---------------Product Modals---------------------------*/
+.img-modal{
+	width: 100%;
+}
+.title-prod{
+	font-size: 4vh;
+}
+.subtitle-prod{
+	font-size: 3vh;
+}
+.text-prod{
+	font-size: 2vh;
+}
+.modal-rlg{
+	max-width: 50% !important;
+	width: 50% !important;
+	text-align: center;
+}
+@media (max-width: 992px) {
+	.modal-rlg{
+		max-width: 80% !important;
+		width: 80% !important;
+		text-align: center;
+	}
 }
 
 /* ---------------About Information and Contact---------------------------*/
@@ -157,7 +185,7 @@ body{
 .info-contact{
 	text-align: center;		
 }
-@media (min-width: 990px) {
+@media (min-width: 992px) {
 	.info-about{
 		text-align: left;
 	}
