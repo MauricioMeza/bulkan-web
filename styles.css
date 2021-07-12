@@ -124,6 +124,7 @@ body{
 .card-btn{
 	font-size: 2vh !important;
 	border-radius: 20px !important;
+	margin-bottom: 1vh;
 }
 .img-select{
 	opacity: 0.9;
@@ -154,12 +155,23 @@ body{
 .text-prod{
 	font-size: 2vh;
 }
+.input-group{
+	width: 50% !important;
+}
 .modal-rlg{
 	max-width: 50% !important;
 	width: 50% !important;
 	text-align: left;
 }
 @media (max-width: 992px) {
+	.input-group{
+		width: 50% !important;
+		height: 7% !important;
+		margin: auto;
+	}
+	.form-control, .btn-minus, .btn-plus{
+		font-size: 2vh !important;
+	}
 	.modal-rlg{
 		max-width: 80% !important;
 		width: 80% !important;
