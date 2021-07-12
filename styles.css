@@ -157,7 +157,7 @@ body{
 .modal-rlg{
 	max-width: 50% !important;
 	width: 50% !important;
-	text-align: center;
+	text-align: left;
 }
 @media (max-width: 992px) {
 	.modal-rlg{

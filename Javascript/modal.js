@@ -1,16 +1,21 @@
-const popRow = document.getElementById("pop-row");
+var modal = document.getElementById('prod-modal')
+modal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-index')
 
+  const prod = products[recipient];
 
+  var modalTitle = modal.querySelector('#title-prod-modal')
+  var modalSubtitle = modal.querySelector('#subtitle-prod-modal')
+  var modalText = modal.querySelector('#text-prod-modal')
+  var modalPrice = modal.querySelector('#price-prod-modal')
+  var modalImg = modal.querySelector('#img-prod-modal')
 
-/*
-<div class="col-lg-3 mx-auto my-3">
-	<div class="card carrousel-card shadow">
-		<img class="card-img-top img-select" src="Assets/poker-6pack.jpg" alt="Card image">
-		<div class="card-body">
-			<h4 class="card-title">Cerveza Poker</h4>
-			<h5 class="card-subtitle">Six Pack</h5>
-			<p class="card-text">$15.000</p>
-		</div>
-	</div>
-</div>
-*/
+  modalImg.src = "Assets/" + prod.imagen;
+  modalTitle.textContent = prod.nombre;
+  modalSubtitle.textContent = prod.presentacion;
+  modalText.textContent = prod.descripcion;
+  modalPrice.textContent = "Precio: $" + formatPrice(prod.precio);
+})
