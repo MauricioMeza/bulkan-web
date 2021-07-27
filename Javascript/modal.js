@@ -1,4 +1,5 @@
 var modal = document.getElementById('prod-modal')
+var picker = document.getElementById('amount-picker')
 modal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget
@@ -12,6 +13,8 @@ modal.addEventListener('show.bs.modal', function (event) {
   var modalText = modal.querySelector('#text-prod-modal')
   var modalPrice = modal.querySelector('#price-prod-modal')
   var modalImg = modal.querySelector('#img-prod-modal')
+
+  picker.value = 1;
 
   modalImg.src = "Assets/" + prod.imagen;
   modalTitle.textContent = prod.nombre;

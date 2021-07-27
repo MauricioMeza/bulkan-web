@@ -1,7 +1,7 @@
 body{
 	margin: 0px;
 }
-/* ---------------Header and NavBar---------------------------*/
+/* --------------- NavBar---------------------------*/
 .logo-img{
 	width: 20vh;
 	height: auto;
@@ -29,6 +29,14 @@ body{
   	padding: 0% 7.5% 0% 7.5%;	
   	margin: 0px;
 }
+.cart{
+	color: #aaaaaa;
+}
+.cart:hover{
+	color: #cccccc;	
+}
+
+/*---------------- Header ---------------------------*/
 #background-intro{
 	text-align: center;
 	padding: 10% 5% 10% 5%;
@@ -45,12 +53,6 @@ body{
 .whats-btn:hover{	
 	background-color: #4d9156;
 	color: #ffffff;
-}
-#whats-ico{
-	background-image: url("Assets/whatsapp--v2.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding: 0vh 2vh 0vh 2vh;
 }
 .white-title{
 	color: white;

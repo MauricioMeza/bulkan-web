@@ -23,6 +23,7 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
 				</button>
+
 				<div class="navbar-collapse collapse" id="navbar-links">
 				    <ul class="navbar-nav ms-auto">
 						<li class="nav-item">
@@ -38,14 +39,19 @@
 						<a class="nav-link" href="#licores">Licores</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" href="#otros">Otros Productos</a>
+						<a class="nav-link" href="#otros">Otros</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" href="#info">Mas Informacion</a>
+						<a class="nav-link" href="#info">Informacion</a>
 						</li>
 				    </ul>
 			  	</div>
+			  	<a type="button" id ="cart-link" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+					<i id ="cart-icon" class="fas fa-shopping-cart cart"></i>	
+				</a>
+				
 			</nav>
+
 			<div id="background-intro">
 				<h1 class="white-title"> Licores a Domicilio en Pasto 24/7</h1>
 				<h2 class="grey-sub"> REALIZA TU PEDIDO POR WHATSAPP </h3>
@@ -56,6 +62,7 @@
 					</span>
 				</a>
 			</div>
+
 		</header>
 
 		
@@ -145,10 +152,6 @@
 		<div class="modal fade" id="prod-modal" tabindex="-1">
 			<div class="modal-dialog modal-rlg modal-dialog-centered">
 			    <div class="modal-content">
-			      	<div class="modal-header">
-				        <h5 class="modal-title" id="prod-modal-title">Informacion de Producto</h5>
-				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			      	</div>
 			      	<div class="modal-body">
 			      		<div class="row">
 			      			<div class="col-lg-6">
@@ -161,7 +164,7 @@
 			      				<h4 class="subtitle-prod" id="price-prod-modal"> Precio: $35.000 </h4>
 			      				<br>
 			      				<h4 class="subtitle-prod"> Cantidad:</h4>
-			      				<input type="number" class="form-control" value="1" min="1" max="20"/> 
+			      				<input type="number" class="form-control" id="amount-picker" value="1" min="1" max="20"/> 
 			      				<br><br>
 			      				<button type="button" class="card-btn btn btn-secondary" data-bs-dismiss="modal">Añadir al Pedido</button>
 			      			</div>
@@ -169,6 +172,17 @@
 			      	</div>
 			    </div>
 		 	</div>
+		</div>
+
+		<!--***************************---- CART OFFCANVAS ----*********************************-->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+			<div class="offcanvas-header">
+			    <h5 id="offcanvasRightLabel">Pedido</h5>
+			    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			    ...
+			</div>
 		</div>
 
 		<!--***************************---- INFORMATION - CONTACT ----*********************************-->

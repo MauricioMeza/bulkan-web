@@ -7,7 +7,7 @@ var products = [
 			"tipo": "l",
 			"popular": true,
 			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 		},
 		{
 			"nombre": "Aguardiente Antioqueño",
@@ -40,12 +40,42 @@ var products = [
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 		},
 		{
+			"nombre": "Vodka Smirknoff",
+			"presentacion": "Botella - 750ml",
+			"precio": 40000,
+			"imagen": "vodkasmirk-tella.jpg",
+			"tipo": "l",
+			"popular": false,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Tequila Olmeca",
+			"presentacion": "Botella - 700ml",
+			"precio": 80000,
+			"imagen": "tquilaolm-tella.jpg",
+			"tipo": "l",
+			"popular": false,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
 			"nombre": "Cerveza Poker",
 			"presentacion": "Six Pack - 355ml x 6",
 			"precio": 15000,
 			"imagen": "poker-6pack.jpg",
 			"tipo": "c",
 			"popular": true,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Cerveza Andina",
+			"presentacion": "Six Pack - 355ml x 6",
+			"precio": 16000,
+			"imagen": "andina-6pack.jpg",
+			"tipo": "c",
+			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 		},
