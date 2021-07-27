@@ -36,6 +36,23 @@ body{
 	color: #cccccc;	
 }
 
+#cart-link{
+	display: block;
+}
+#cart-link-resp{
+	display: none;
+}
+@media (max-width: 992px) {
+	#cart-link{
+		display: none;
+	}
+	#cart-link-resp{
+		display: block;	
+		margin: 0% 10% 0% 10%;
+		font-size: 4vh;
+	}
+}
+
 /*---------------- Header ---------------------------*/
 #background-intro{
 	text-align: center;
@@ -88,10 +105,11 @@ body{
 	height: 85%;
 	text-align: center;
 	padding: 3vh; 
-	margin: 3vh;
+	margin: 5vh 3vh 0vh 3vh;
 }
 .service-sub{
 	color: rgb(100,100,100);
+	margin: 0px;
 	font-size: 2.5vh;
 }
 .service-title{
@@ -118,10 +136,14 @@ body{
 }
 .card-title{
 	font-size: 3vh;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .card-subtitle{
 	font-size: 2.5vh;
 	color: rgb(100,100,100);
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .card-btn{
 	font-size: 2vh !important;
@@ -158,7 +180,7 @@ body{
 	font-size: 2vh;
 }
 .input-group{
-	width: 50% !important;
+	width: 60% !important;
 }
 .modal-rlg{
 	max-width: 50% !important;
@@ -180,6 +202,19 @@ body{
 		text-align: center;
 	}
 }
+
+/*---------------- Cart ---------------------------*/
+@media (max-width: 992px) {
+	.offcanvas-end{
+		width: 60% !important;
+	}
+}
+.buy-btn{
+	display: block;
+  	width: 100%;
+  	text-align: center;
+}
+
 
 /* ---------------About Information and Contact---------------------------*/
 .info-row{
