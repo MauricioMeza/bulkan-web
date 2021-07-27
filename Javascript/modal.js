@@ -6,14 +6,15 @@ var modalPrice = modal.querySelector('#price-prod-modal')
 var modalImg = modal.querySelector('#img-prod-modal')
 
 var $pick = $("#amount-picker")
-
 var addButton = document.getElementById('addButton')
+
+var recipient;
 
 modal.addEventListener('show.bs.modal', function (event) {
   //--Button that triggered the modal
   var button = event.relatedTarget
   //--Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('data-bs-index')
+  recipient = button.getAttribute('data-bs-index')
 
   //--Get product for this modal and set its info
   const prod = products[recipient];
@@ -32,10 +33,18 @@ modal.addEventListener('show.bs.modal', function (event) {
   $pick.val(quantity);
 
   //--Make button add the product and its amount to cart
-  addButton.addEventListener('click', function (event){
-    prodSelect[recipient] = $pick.val();
-    console.log(prodSelect);
-  })
-
+  try{
+    addButton.removeEventListener('click', addProd)
+  }catch(error){
+    console.log(error)
+    console.log("first time adding functionality")
+  }
+  addButton.addEventListener('click', addProd)
   
 })
+
+var addProd = function(event){
+  prodSelect[recipient] = parseInt($pick.val());
+  console.log(products[recipient])
+  createCart(products[recipient], recipient)
+}
