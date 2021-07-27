@@ -170,7 +170,7 @@
 			      				<h4 class="subtitle-prod"> Cantidad:</h4>
 			      				<input type="number" class="form-control" id="amount-picker" value="1" min="1" max="20"/> 
 			      				<br><br>
-			      				<button type="button" class="card-btn btn btn-secondary" data-bs-dismiss="modal">Añadir al Pedido</button>
+			      				<button type="button" id="addButton" class="card-btn btn btn-secondary" data-bs-dismiss="modal">Añadir al Pedido</button>
 			      			</div>
 			      		</div>
 			      	</div>
@@ -187,7 +187,7 @@
 			<div class="offcanvas-body cart-prods">
 				<div class="container-fluid">
 				    <div class="card mb-3">
-						<div class="row g-0 my-3">
+						<div class="row g-0">
 							<div class="col-md-4">
 								<img src="Assets/narino-tella.jpg" class="img-fluid rounded-start" alt="...">
 							</div>
@@ -195,7 +195,7 @@
 								<div class="card-body">
 									<h5 class="card-title">Aguardiente Nariño</h5>
 									<p class="card-subtitle">Botella - 750ml</p><br>
-									<input type="number" class="form-control" id="amount-picker" value="1" min="0" max="20"/> 
+									<input type="number" class="form-control" id="amount-picker-off" value="1" min="0" max="20"/> 
 								</div>
 							</div>
 						</div>
@@ -279,5 +279,6 @@
 		<script type="text/javascript" src="Javascript/products.js"></script>
 		<script type="text/javascript" src="Javascript/addProducts.js"></script>
 		<script type="text/javascript" src="Javascript/modal.js"></script>
+		<script type="text/javascript" src="Javascript/cart.js"></script>
 	</body>
 </html>
