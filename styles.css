@@ -29,6 +29,7 @@ body{
   	padding: 0% 7.5% 0% 7.5%;	
   	margin: 0px;
 }
+
 .cart{
 	color: #aaaaaa;
 }
@@ -36,8 +37,21 @@ body{
 	color: #cccccc;	
 }
 
+@keyframes highlight{
+	0% {opacity: 1;}
+	50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+.cart-full{
+	display: block;
+	opacity: 1;
+	color: #4d9156;
+    animation: highlight 2s infinite;
+}
+
 #cart-link{
 	display: block;
+	font-size: 3vh;
 }
 #cart-link-resp{
 	display: none;
@@ -50,6 +64,9 @@ body{
 		display: block;	
 		margin: 0% 10% 0% 10%;
 		font-size: 4vh;
+	}
+	.cart-link-resp-scroll{
+		font-size: 3vh !important;
 	}
 }
 
@@ -135,7 +152,7 @@ body{
 	font-size: 3vh;
 }
 .card-title{
-	font-size: 3vh;
+	font-size: 2.5vh;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -143,13 +160,16 @@ body{
 	display: block;
 }
 .card-subtitle{
-	font-size: 2.5vh;
+	font-size: 2.25vh;
 	color: rgb(100,100,100);
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	width: 100%;
 	display: block;
+}
+.card-text{
+	font-size: 2.4vh;
 }
 .card-btn{
 	font-size: 2vh !important;
@@ -213,6 +233,7 @@ body{
 @media (max-width: 992px) {
 	.offcanvas-end{
 		width: 60% !important;
+		text-align: center !important;
 	}
 }
 .buy-btn{
@@ -268,7 +289,7 @@ body{
 	color: #000000;
 }
 .contact-form{
-	background-color: #dddddd;
+	background-color: #dddddd !important;
 	width: 100%;
 }
 .contact-btn{

@@ -1,65 +1,5 @@
 var products = [
 		{
-			"nombre": "Aguardiente Nariño",
-			"presentacion": "Botella - 750ml",
-			"precio": 30000,
-			"imagen": "narino-tella.jpg",
-			"tipo": "l",
-			"popular": true,
-			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-		},
-		{
-			"nombre": "Aguardiente Antioqueño",
-			"presentacion": "Botella - 750ml",
-			"precio": 35000,
-			"imagen": "antioqueno-tella.jpg",
-			"tipo": "l",
-			"popular": true,
-			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		},
-		{
-			"nombre": "Ron Viejo de Caldas",
-			"presentacion": "Media Botella - 375ml",
-			"precio": 26000,
-			"imagen": "rvc-media.jpg",
-			"tipo": "l",
-			"popular": true,
-			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		},
-		{
-			"nombre": "Whiskey Old Parr",
-			"presentacion": "Botella - 1000ml",
-			"precio": 120000,
-			"imagen": "oldpar-tella.jpg",
-			"tipo": "l",
-			"popular": false,
-			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		},
-		{
-			"nombre": "Vodka Smirknoff",
-			"presentacion": "Botella - 750ml",
-			"precio": 40000,
-			"imagen": "vodkasmirk-tella.jpg",
-			"tipo": "l",
-			"popular": false,
-			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		},
-		{
-			"nombre": "Tequila Olmeca",
-			"presentacion": "Botella - 700ml",
-			"precio": 80000,
-			"imagen": "tquilaolm-tella.jpg",
-			"tipo": "l",
-			"popular": false,
-			"disponible": true,
-			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-		},
-		{
 			"nombre": "Cerveza Poker",
 			"presentacion": "Six Pack - 355ml x 6",
 			"precio": 15000,
@@ -125,6 +65,66 @@ var products = [
 			"precio": 10000,
 			"imagen": "fourloko.jpg",
 			"tipo": "c",
+			"popular": false,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Aguardiente Nariño",
+			"presentacion": "Botella - 750ml",
+			"precio": 30000,
+			"imagen": "narino-tella.jpg",
+			"tipo": "l",
+			"popular": true,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+		},
+		{
+			"nombre": "Aguardiente Antioqueño",
+			"presentacion": "Botella - 750ml",
+			"precio": 35000,
+			"imagen": "antioqueno-tella.jpg",
+			"tipo": "l",
+			"popular": true,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Ron Viejo de Caldas",
+			"presentacion": "Media Botella - 375ml",
+			"precio": 26000,
+			"imagen": "rvc-media.jpg",
+			"tipo": "l",
+			"popular": true,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Whiskey Old Parr",
+			"presentacion": "Botella - 1000ml",
+			"precio": 120000,
+			"imagen": "oldpar-tella.jpg",
+			"tipo": "l",
+			"popular": false,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Vodka Smirknoff",
+			"presentacion": "Botella - 750ml",
+			"precio": 40000,
+			"imagen": "vodkasmirk-tella.jpg",
+			"tipo": "l",
+			"popular": false,
+			"disponible": true,
+			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+		},
+		{
+			"nombre": "Tequila Olmeca",
+			"presentacion": "Botella - 700ml",
+			"precio": 80000,
+			"imagen": "tquilaolm-tella.jpg",
+			"tipo": "l",
 			"popular": false,
 			"disponible": true,
 			"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"

@@ -1,5 +1,7 @@
 prodSelect = new Array(products.length).fill(0);
 const cart_cont = document.getElementById("cart-container");
+const cart_icon = document.getElementById("cart-icon");
+const cart_icon_resp = document.getElementById("cart-icon-resp");
 
 
 function createCart(prod, index) {
@@ -26,4 +28,24 @@ function createCart(prod, index) {
 	}
 }
 
-console.log(prodSelect)
+function highlightCart(){
+	full = false;
+	for (var i = 0; i < prodSelect.length; i++) {
+		if(prodSelect[i] != 0){
+			full = true;
+			break;
+		}
+	}
+
+	if(full){
+		cart_icon.classList.add('cart-full');
+		cart_icon_resp.classList.add('cart-full');
+		cart_icon.classList.remove('cart');
+		cart_icon_resp.classList.remove('cart');
+	}else{
+		cart_icon.classList.add('cart');
+		cart_icon_resp.classList.add('cart');
+		cart_icon.classList.remove('cart-full');
+		cart_icon_resp.classList.remove('cart-full');
+	}
+}
