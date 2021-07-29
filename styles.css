@@ -171,6 +171,9 @@ body{
 .card-text{
 	font-size: 2.4vh;
 }
+.price-text{
+	font-size: 2vh !important;
+}
 .card-btn{
 	font-size: 2vh !important;
 	border-radius: 20px !important;
