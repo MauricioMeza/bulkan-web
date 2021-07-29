@@ -1,7 +1,15 @@
-prodSelect = new Array(products.length).fill(0);
 const cart_cont = document.getElementById("cart-container");
 const cart_icon = document.getElementById("cart-icon");
 const cart_icon_resp = document.getElementById("cart-icon-resp");
+
+if(localStorage.getItem("prodSelect")){
+	prodSelect = JSON.parse(localStorage.getItem("prodSelect"));
+	createCart();
+	highlightCart();
+}else{
+	prodSelect = new Array(products.length).fill(0);
+	localStorage.setItem("prodSelect", JSON.stringify(prodSelect));
+}
 
 //Iterate trough the list and fill the cart with the selected products
 function createCart() {
@@ -11,6 +19,8 @@ function createCart() {
 	}	
 
 	for (var i = 0; i < prodSelect.length; i++) {
+		console.log(products[i])
+		console.log(prodSelect[i])
 		prod = products[i]; 	
 		numProds = prodSelect[i];
 
@@ -72,6 +82,7 @@ function highlightCart(){
 
 function deleteFromCart(i){
 	prodSelect[i] = 0;
+	localStorage.setItem("prodSelect", JSON.stringify(prodSelect));
 	createCart();
 	highlightCart();
 }

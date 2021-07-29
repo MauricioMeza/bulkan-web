@@ -45,6 +45,7 @@ modal.addEventListener('show.bs.modal', function (event) {
 
 var addProd = function(event){
   prodSelect[recipient] = parseInt($pick.val());
+  localStorage.setItem("prodSelect", JSON.stringify(prodSelect));
   createCart();
   highlightCart();
 }
