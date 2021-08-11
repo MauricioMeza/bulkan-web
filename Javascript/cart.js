@@ -30,20 +30,20 @@ function createCart() {
 			htmlCart.setAttribute('class', 'card mb-3');
 			htmlCart.innerHTML =
 			`
-			<div class="row g-0">
-				<div class="col-md-4">
-					<img src="Assets/${prod.imagen}" class="img-fluid rounded-start">
+			<div class="row g-0 ">
+				<div class="col-md-4 ">
+					<img src="Assets/${prod.imagen}" class="img-fluid card-row rounded-start">
 				</div>
 				<div class="col-md-8">
 					<div class="card-body">
 						<h5 class="card-title">${prod.nombre}</h5>
 						<p class="card-subtitle">${prod.presentacion}</p></br>
 						<div class="row"> 
-							<div class="col-md-6">
-								<p class="price-text"><strong>No: </strong> ${numProds}</p>
+							<div class="col-md-4">
+								<p class="price-text"><strong>x  ${numProds} </strong></p>
 							</div>
-							<div class="col-md-6">
-								<button onClick="deleteFromCart(${i})" id="buttonDelete" class="btn btn-danger price-text"> Eliminar </button> 
+							<div class="col-md-8" style="text-align:right;">
+								<button onClick="deleteFromCart(${i})" id="buttonDelete" class="btn btn-outline-danger price-text"> Eliminar </button> 
 							</div>
 							
 						</div>
@@ -55,22 +55,23 @@ function createCart() {
 
 			cart_cont.appendChild(htmlCart);
 		}
-
-		//Calculate price of current prducts in cart and plce it in the html
-			var price = countPrice();
-			var dom = 4000;
-			var totalPrice = price + dom;
-			console.log(price)
-
-			price_p.innerHTML = '';
-			price_p.innerHTML = ` <strong> Pedido: </strong> $ ${formatPrice(price)} `;
-
-			price_d.innerHTML = '';
-			price_d.innerHTML = ` <strong> Domicilio: </strong> $ ${formatPrice(dom)} `;
-
-			price_t.innerHTML = '';
-			price_t.innerHTML = ` <strong> Total: </strong> $ ${formatPrice(totalPrice)} `;
 	}
+
+	//Calculate price of current prducts in cart and plce it in the html if cart is in the index.html
+	var price = countPrice();
+	var dom = 4000;
+	var totalPrice = price + dom;
+	console.log(price)
+
+	price_p.innerHTML = '';
+	price_p.innerHTML = ` <strong> Pedido: </strong> $${formatPrice(price)} `;
+
+	price_d.innerHTML = '';
+	price_d.innerHTML = ` <strong> Domicilio: </strong> $${formatPrice(dom)} `;
+
+	price_t.innerHTML = '';
+	price_t.innerHTML = ` <strong> Total:  $${formatPrice(totalPrice)} </strong> `;
+		
 }
 
 //Gives price for items in cart

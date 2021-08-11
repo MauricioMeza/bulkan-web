@@ -140,7 +140,8 @@ body{
 
 /* ---------------Container Products Carrousels---------------------------*/
 .container-carrousel{
-	padding-top: 15vh;
+	padding-top: 13vh;
+	padding-bottom: 2vh;
 	text-align: center;
 }
 .container-title{
@@ -244,7 +245,16 @@ body{
   	width: 100%;
   	text-align: center;
 }
+.cart-prods{
+	background-color: #eeeeee;
+}
 
+.line-divider-bot{
+	margin: 0 0 10px 0;
+}
+.line-divider-top{
+	margin: 0;
+}
 
 /* ---------------About Information and Contact---------------------------*/
 .info-row{
@@ -310,4 +320,9 @@ body{
 	font-style: bold;
 	background-color:  #ffffff;
 	color: #000000;7
+}
+
+/* ---------------Checkout---------------------------*/
+.checkout-form{
+	padding: 1rem;
 }

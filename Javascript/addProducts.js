@@ -43,6 +43,3 @@ function createCard(prod, index){
 	}
 }
 
-function formatPrice(num){
-	return (num/1000).toFixed(3)	
-}

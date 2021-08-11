@@ -9,11 +9,17 @@ window.onscroll = () => {
         navbar.classList.add('fixed-top');
         logo.classList.add('logo-img-scroll');
         header.classList.add('header-scroll');
-        cart_resp.classList.add('cart-link-resp-scroll')
+        if(!document.location.href.includes("checkout")){
+            cart_resp.classList.add('cart-link-resp-scroll')
+        }
+        
     } else {
         navbar.classList.remove('fixed-top');
         logo.classList.remove('logo-img-scroll')
         header.classList.remove('header-scroll')
-        cart_resp.classList.remove('cart-link-resp-scroll')
+        if(!document.location.href.includes("checkout")){
+            cart_resp.classList.remove('cart-link-resp-scroll')
+        }
+
     }
 };

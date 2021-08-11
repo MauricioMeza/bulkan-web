@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<title>Bulkan Licores | Licores a Domicilio en Pasto 24/7</title>
+
+		<link rel="stylesheet" href="styles.css">	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+		<meta charset="utf-8"/>
+		<meta name="description" content="Servicio de licores a domicilio hasta la puerta de tu casa en la ciudad de pasto las 24hrs. Bulkan Licores"/>
+		<meta name="keywords" content="bulkan, licores, licor, domicilio, pasto, 24"/>
+		<meta name="author" content="Machine Meza" />
+
+	</head>
+	<body data-bs-spy="scroll" data-bs-target="#navbar-links">
+
+		<!--***************************---- INITIAL NAVBAR, HEADER AND INTRO ----*********************************-->
+
+		<header class="container-fluid header" id="header">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  			<a class="navbar-brand" href="#"><img class="logo-img" src="Assets/BulkanB.png"></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse" id="navbar-links">
+				    <ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+						<a class="nav-link" href="#prod">Productos</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#loct">Ubicacion</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="index.html">Volver</a>
+						</li>
+				    </ul>
+			  	</div>				
+			</nav>
+		</header>
+
+		
+		<!--***************************---- PRODUCTCONFIRMATION ----*********************************-->
+
+		<div class="container container-carrousel" id="prod">
+			<div class="row">
+				<h1 class="container-title"> Informacion del Pedido </h1>
+				<hr>
+				<div class="col-lg-8 my-3">
+					<div class="cart-prods">
+
+						<p class="service-title"> Informacion del Pedido</p>	
+						<form class="checkout-form">
+							<div class="form-group row">
+								<label for="inputNombre" class="col-sm-2 col-form-label d-none d-lg-block">Nombre</label>
+								<div class="col-lg-10 mx-auto">
+									<input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+								</div>
+							</div>
+							<br>
+							<div class="form-group row">
+								<label for="inputCorreo" class="col-sm-2 col-form-label d-none d-lg-block">Correo</label>
+								<div class="col-lg-10 mx-auto">
+									<input type="email" class="form-control" id="inputCorreo" placeholder="Correo">
+								</div>
+							</div>
+							<br>
+							<div class="form-group row">
+								<label for="inputCelular" class="col-sm-2 col-form-label d-none d-lg-block">Celular</label>
+								<div class="col-lg-10 mx-auto">
+									<input type="tel" class="form-control" id="inputCelular" placeholder="Celular">
+								</div>
+							</div>
+							<br>
+							<div class="form-group row">
+								<label for="inputDireccion" class="col-sm-2 col-form-label d-none d-lg-block">Direccion</label>
+								<div class="col-lg-5 mx-auto">
+									<input type="text" class="form-control" id="inputDireccion" placeholder="Direccion">
+								</div>
+								<div class="col-lg-5 mx-auto">
+									<input type="text" class="form-control" id="inputBarrio" placeholder="Barrio">
+								</div>
+								<label for="inputDetalles" class="col-sm-2 col-form-label d-none d-lg-block"></label>
+								<div class="col-lg-10 mx-auto" style="margin-top: 10px">
+									<input type="text" class="form-control" id="inputDetalles" placeholder="Info Adicional: (Edificio/Casa/Apto)">
+								</div>
+							</div>
+
+
+						</form>
+
+					</div>
+				</div> 
+				<div class="col-lg-4 my-3">
+					<div class="cart-prods">
+						<p class="service-title"> Productos en el Pedido</p>	
+							<div class="container-fluid" id="cart-container">
+							</div>
+						<div class="row">
+							<div class="col-lg-4">
+								<p class="card-text" id="price" style="margin: 10px 0 0 0;">
+									<strong> Pedido: </strong> $ 0.0 	
+								</p>
+							</div>
+							<div class="col-lg-4">
+								<p class="card-text" id="domicilio" style="margin: 10px 0 0 0;">
+									<strong> Domicilio: </strong> $ 4.000 
+								</p>
+							</div> 
+							<div class="col-lg-4">
+								<p class="card-text" id="price-total" style="margin: 10px 0 10px 0;">
+									<strong> Total:  $ 4.000 </strong>
+								</p>	
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***************************---- LOCATIONCONFIRMATION ----*********************************-->
+
+		<div class="container container-carrousel" id="loct">
+			<div class="row">
+				<h1 class="container-title"> Ubicacion </h1>
+				<hr>
+			</div>
+			<div class="row" id="otr-row">
+				
+			</div>
+		</div>
+
+
+		<!--***************************---- CDNs and Imports ----*********************************-->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"b integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap-input-spinner@3.0.2/src/bootstrap-input-spinner.js" integrity="sha256-jnPIJuRfy72/RhBumlM1eycbI7t9zUxA7lSHeUo3kKs=" crossorigin="anonymous"></script>
+		<script>
+    		$("input[type='number']").inputSpinner()
+		</script>
+
+		<script type="text/javascript" src="Javascript/scroll.js"></script>
+		<script type="text/javascript" src="Javascript/products.js"></script>
+		<script type="text/javascript" src="Javascript/cart.js"></script>
+	</body>
+</html>
