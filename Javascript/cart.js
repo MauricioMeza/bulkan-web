@@ -30,19 +30,19 @@ function createCart() {
 			htmlCart.setAttribute('class', 'card mb-3');
 			htmlCart.innerHTML =
 			`
-			<div class="row g-0 ">
-				<div class="col-md-4 ">
-					<img src="Assets/${prod.imagen}" class="img-fluid card-row rounded-start">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="Assets/${prod.imagen}" class="img-fluid card-row hidden-sm rounded-start">
 				</div>
-				<div class="col-md-8">
+				<div class="col-sm-8 ">
 					<div class="card-body">
 						<h5 class="card-title">${prod.nombre}</h5>
 						<p class="card-subtitle">${prod.presentacion}</p></br>
 						<div class="row"> 
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<p class="price-text"><strong>x  ${numProds} </strong></p>
 							</div>
-							<div class="col-md-8" style="text-align:right;">
+							<div class="col-sm-8" class=cart-button">
 								<button onClick="deleteFromCart(${i})" id="buttonDelete" class="btn btn-outline-danger price-text"> Eliminar </button> 
 							</div>
 							

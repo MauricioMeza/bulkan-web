@@ -10,7 +10,7 @@ function createCard(prod, index){
 		//Create HTML Card
 		precio = formatPrice(prod.precio);
 		var htmlCard = document.createElement('div');
-		htmlCard.setAttribute('class', 'col-lg-2 col-md-6 col-sm-4 mx-auto my-3');
+		htmlCard.setAttribute('class', 'col-lg-2 col-md-6 col-sm-6 mx-auto my-3');
 		htmlCard.innerHTML =
 		`<div class="card carrousel-card shadow">
 			<a data-bs-toggle="modal" data-bs-target="#prod-modal" data-bs-index=${index}>

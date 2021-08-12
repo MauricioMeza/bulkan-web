@@ -62,7 +62,7 @@ body{
 	}
 	#cart-link-resp{
 		display: block;	
-		margin: 0% 10% 0% 10%;
+		margin: 0% 5% 0% 5%;
 		font-size: 4vh;
 	}
 	.cart-link-resp-scroll{
@@ -152,6 +152,13 @@ body{
 	height: 100%;
 	font-size: 3vh;
 }
+@media(max-width: 992px){
+	.carrousel-card{
+		height: 100%;
+		font-size: 3vh;
+		margin: 0% 10%;
+	}
+}
 .card-title{
 	font-size: 2.5vh;
 	white-space: nowrap;
@@ -230,16 +237,29 @@ body{
 		max-width: 80% !important;
 		width: 80% !important;
 		text-align: center;
+		margin: auto !important;
 	}
 }
 
 /*---------------- Cart ---------------------------*/
 @media (max-width: 992px) {
 	.offcanvas-end{
-		width: 60% !important;
-		text-align: center !important;
+		text-align: center ;
 	}
 }
+@media (max-width: 768px) {
+	.offcanvas-end{
+		width: 60% !important;
+		text-align: center ;
+	}
+	.cart-button{
+		text-align: center;
+	}
+}
+.cart-button{
+	text-align: left;
+}
+
 .buy-btn{
 	display: block;
   	width: 100%;
@@ -263,6 +283,7 @@ body{
 }
 .info-img{
 	text-align: center;
+	width: 100%;
 }
 .info-paragraph{
 	font-size: 2.7vh;
