@@ -231,7 +231,7 @@ body{
 		margin: auto;
 	}
 	.form-control, .btn-minus, .btn-plus{
-		font-size: 2.7vh !important;
+		font-size: 3vh !important;
 	}
 	.modal-rlg{
 		max-width: 80% !important;
